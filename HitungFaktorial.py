@@ -8,4 +8,6 @@
 
 # Jangan Ubah nama function
 def faktorial(n):
- # Tulis kodemu disini
+    if n < 0: raise RecursionError("Input tidak valid. n harus bilangan positif.")
+    elif n == 0 or n == 1: return 1
+    else: return n * faktorial(n - 1)

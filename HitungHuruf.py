@@ -7,4 +7,4 @@
 
 # Jangan Ubah nama function
 def hitung_huruf(string):
-    # Tulis kodemu disini
+    return len([i for i in string if i.isalpha()])
